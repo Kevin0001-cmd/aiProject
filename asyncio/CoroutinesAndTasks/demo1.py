@@ -8,6 +8,9 @@ async def say_after(delay, what):
     print(what)
 
 # 链式调用
+"""
+main方法调用共计花费3s
+"""
 async def main():
     print(f"started at {time.strftime('%X')}")
 

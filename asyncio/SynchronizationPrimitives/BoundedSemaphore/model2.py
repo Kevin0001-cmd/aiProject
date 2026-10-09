@@ -1,3 +1,6 @@
+"""
+每次都执行2个任务
+"""
 import asyncio
 
 MAX_CONCURRENT = 2

@@ -9,6 +9,9 @@ async def say_after(delay, what):
     print(what)
 
 # 并发执行，不是任务链式调用
+"""
+并发执行，是一起执行的，所以main方法共计花费2s
+"""
 async def main():
     task1 = asyncio.create_task(say_after(1, 'hello'))
     task2 = asyncio.create_task(say_after(2, 'world'))
